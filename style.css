@@ -1,31 +1,35 @@
-
-
-
-html {
-  background: #d3c5d1
-    url(https://img.freepik.com/free-photo/watercolor-and-coloring-by-numbers-painting-on-canvas-by-numbers_106006-4652.jpg?w=740)
-    no-repeat;
-  background-size: cover;
-  font: 1em "Popins", sans-serif;
-}
-.button a {
-  text-decoration: none;
-  color: #000;
-  padding: 14px 0;
-}
-.button {
-  display: grid;
-  place-items: center;
-  border: 2px #000 solid;
-  border-radius: 10px;
-  max-width: 900px;
-  margin: 15px auto;
+.container {
+    width: 1000px;
+    width: auto;
+    max-width: 1000px;
+    height: 200px;
+    margin: 50px auto;
+    overflow-x: scroll;
+    background-color: #ffe964;
+    padding: 2%;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 #9ad8f1, 0 6px 20px 0 rgba(0, 0, 0, .19);
 }
 
-.button:hover {
-  border: 2px #000 solid;
-  background: linear-gradient(45deg, /*#e55138,*/ #b05ad5, #608afb) /*#25b1fc)*/;
-  color: #fff;
+.img-container {
+    display: flex;
+    flex-direction: row;
 }
-.link {
+
+img {
+    width: 200px;
+    height: 180px;
+    box-shadow: 0 0 15px #6c5d00;
+    margin-right: 50px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #fff; /*Цвет скролла*/
+} 
+::-webkit-scrollbar-thumb { 
+	border-radius: 5px; /*Закругление ползунка*/
+	background-color: #ccc; /*Цвет ползунка*/
+} 
+::-webkit-scrollbar { 
+	width: 6px;  /*Толщина скролла*/
 }
